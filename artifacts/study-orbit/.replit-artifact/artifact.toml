@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "StudyOrbit"
+version = "1.0.0"
+id = "artifacts/study-orbit"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18561
+
+[services.development]
+run = "pnpm --filter @workspace/study-orbit run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/study-orbit", "run", "build" ]
+publicDir = "artifacts/study-orbit/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18561"
+BASE_PATH = "/"

@@ -1,0 +1,243 @@
+🚀 MASTER PROMPT FOR ANTIGRAVITY
+🔥 Project Name: StudyOrbit
+
+Build a production-ready full-stack web application called StudyOrbit.
+
+This is NOT a basic study group finder.
+
+This is a Galaxy-Based Intelligent Study & Skill Matching Platform with a visually stunning, interactive orbit dashboard.
+
+The UI must NOT look AI-generated or template-based.
+It must feel unique, premium, futuristic, and visually impressive.
+
+You must:
+
+Build complete frontend and backend
+Setup real database (no mock data)
+Implement authentication
+Push code to a new GitHub repository
+Deploy to Vercel
+Configure environment variables
+Provide GitHub repo link
+Provide live deployed URL
+Ensure zero console errors
+Ensure production-ready structure
+🌌 CORE CONCEPT
+
+StudyOrbit is a galaxy-themed interactive dashboard where:
+
+Subjects are Planets
+Skill Roles are Orbit Rings
+Students are Glowing Satellites
+Teams form as Orbit Clusters
+Matching is based on Skill + Time + Level + Requirements
+
+Everything happens inside an interactive galaxy interface.
+
+🎨 UI / DESIGN REQUIREMENTS (CRITICAL)
+
+This must NOT look generic.
+
+Design Style:
+
+Ultra-clean dark theme OR ultra-clean white theme (choose one and execute perfectly)
+Glassmorphism panels
+Neon accent colors
+Subtle gradients
+Soft glow effects
+Smooth transitions (Framer Motion)
+Fully responsive
+No boring dashboard templates
+
+Galaxy Dashboard must include:
+
+Animated background starfield
+Central planet based on selected subject
+Orbit rings representing skill categories:
+Frontend
+Backend
+AI/ML
+DSA
+Accounting
+Other
+Users shown as glowing particles
+Experts glow brighter
+Beginners glow softer
+Morning learners have sun icon indicator
+Night learners have moon indicator
+
+Clicking on a satellite opens profile preview modal.
+
+👤 USER PROFILE SYSTEM
+
+Each user profile must include:
+
+Name
+Subject
+Study Time Preference:
+Morning
+Night
+Flexible
+Skill Level:
+Beginner
+Intermediate
+Expert
+Goal Type:
+Exam
+Project
+Hackathon
+Practice
+Skill Categories (multi-select):
+Frontend
+Backend
+AI/ML
+DSA
+Accounting
+Other
+Short bio (max 120 characters)
+
+No skill test required.
+Skill level is selected manually.
+
+🧩 TEAM CREATION SYSTEM
+
+Users can create a team with:
+
+Team name
+Subject
+Study time (Morning/Night/Flexible)
+Required roles:
+Example: 2 Frontend, 2 Backend, 1 AI
+Minimum required skill level
+Goal type
+
+The system must:
+
+Automatically prioritize matching users
+Show Top 10 most relevant candidates
+Filter by:
+Skill category match
+Skill level match
+Study time match
+Subject match
+
+If 250 users exist:
+Backend-heavy teams must first see backend-skilled users.
+
+🧠 MATCHING ALGORITHM
+
+Implement weighted scoring:
+
+Subject Match → 30%
+Study Time Match → 20%
+Skill Category Match → 25%
+Skill Level Match → 15%
+Goal Type Match → 10%
+
+Sort users by total compatibility score.
+
+Display compatibility percentage visually in UI.
+
+No AI APIs needed. Use deterministic scoring logic.
+
+🧑‍💻 TECH STACK REQUIREMENTS
+
+Frontend:
+
+Next.js 14 (App Router)
+TypeScript
+TailwindCSS
+Framer Motion
+React Three Fiber (for galaxy orbit scene)
+shadcn/ui
+
+Backend:
+
+Supabase (Auth + PostgreSQL)
+OR
+PostgreSQL + Prisma + NextAuth
+
+Use clean architecture.
+
+Database Tables:
+
+Users
+Profiles
+Teams
+TeamMembers
+RoleRequirements
+
+Proper relational structure required.
+
+📊 INTERACTIVE DASHBOARD REQUIREMENTS
+
+Single-page immersive dashboard experience:
+
+Sections inside dashboard:
+
+Galaxy View (main visual matching area)
+Create Team Panel (glass sidebar)
+My Profile Panel
+Top Matches Section
+My Teams Section
+
+Everything must feel seamless — not page reload heavy.
+
+Use smooth transitions between states.
+
+🌙 SMART TIME MATCHING FEATURE
+
+If user selects Night preference:
+
+Highlight Night teams
+Show moon badge 🌙
+
+If Morning:
+
+Show sun badge ☀️
+
+Groups with mismatched time preference should have lower compatibility score.
+
+🏆 HACKATHON-OPTIMIZED CONSTRAINTS
+Do NOT build chat system
+Do NOT build notifications
+Do NOT build admin panel
+Focus on core matching + UI wow factor
+Ensure smooth demo experience
+🚀 DEPLOYMENT REQUIREMENTS
+
+You must:
+
+Initialize Git repository
+Create GitHub repository
+Push full code
+Setup Vercel project
+Configure environment variables
+Deploy production build
+Provide:
+GitHub repo URL
+Live Vercel URL
+Setup instructions
+
+No manual steps left incomplete.
+
+🛑 DO NOT
+Use static mock data
+Leave TODO comments
+Produce placeholder UI
+Create basic template dashboard
+
+This must feel premium, unique, and hackathon-winning.
+
+🎤 DEMO EXPERIENCE GOAL
+
+When the user clicks:
+
+“Find My Orbit”
+
+The galaxy animates
+Relevant users move closer
+Compatibility % appears
+Team formation visually occurs
+
+The UI must feel magical but professional.
